@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use App\User;
+use App\Models\User;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -29,6 +29,8 @@ class UserController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
         $grid->column('email', __('Email'));
+        $grid->column('profile.age');
+        $grid->column('profile.gender');
         $grid->column('email_verified_at', __('Email verified at'));
         $grid->column('password', __('Password'));
         $grid->column('remember_token', __('Remember token'));
