@@ -51,6 +51,11 @@ class MoviesController extends AdminController
         $grid->disableExport();
         $grid->disableRowSelector();
         $grid->disableActions();
+
+        
+        
+
+
 //        $grid->disableColumnSelector();
         return $grid;
     }
